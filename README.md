@@ -44,3 +44,34 @@ To get started with using PopUp Forge, simply open the application in your brows
 *   **ShadCN UI**: A collection of re-usable components built using Radix UI and Tailwind CSS.
 *   **Lucide React**: A beautiful and consistent icon library.
 *   **Genkit**: An AI toolkit for building generative AI features.
+
+---
+
+## Project Structure
+
+```
+PopUp-Forge/
+├── src/
+│   ├── app/              # Next.js app router (page.tsx, layout.tsx)
+│   ├── components/       # UI components (ShadCN/Radix)
+│   ├── hooks/            # React hooks
+│   └── lib/              # Utility functions
+├── public/               # Static assets
+├── next.config.ts        # Next.js config (static export enabled)
+└── package.json
+```
+
+## Deploy
+
+Static export (`output: "export"` in `next.config.ts`). Build with:
+
+```bash
+npm install
+npm run build   # emits static site to ./out
+```
+
+Deploy the `out/` folder to any static host (Cloudflare Pages, Netlify, GitHub Pages).
+
+## Credits
+
+**Built by Girish Lade** — [ladestack.in](https://ladestack.in)
